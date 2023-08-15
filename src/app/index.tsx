@@ -1,12 +1,12 @@
 import "./styles/index.scss"
 
-import {useTheme} from "./providers/ThemeProvider";
-import {classNames} from "../shared/lib/classNames/classNames";
+import {useTheme} from "app/providers/ThemeProvider";
+import {classNames} from "shared/lib/classNames/classNames";
 
-import {HomePage} from "../pages/HomePage"
-import {PreviewPage} from "../pages/PreviewPage";
-import {SignInPage} from "../pages/SignInPage";
-import {SignUpPage} from "../pages/SignUpPage";
+import {HomePage} from "pages/HomePage"
+import {PreviewPage} from "pages/PreviewPage";
+import {SignInPage} from "pages/SignInPage";
+import {SignUpPage} from "pages/SignUpPage";
 
 import {Link, Route, Routes} from "react-router-dom";
 import {Suspense} from "react";
