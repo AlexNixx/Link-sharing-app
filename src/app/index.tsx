@@ -1,12 +1,12 @@
 import {Link, Route, Routes} from "react-router-dom";
 
-import Home from "../pages/Home";
-import Some from "../pages/Some";
-
 import "./styles/index.scss"
 
 import {useTheme} from "./theme/useTheme";
 import {classNames} from "../shared/lib/classNames/classNames";
+
+import {HomePage} from "../pages/home-page"
+import {Suspense} from "react";
 
 const App = () => {
     const {theme, toggleTheme} = useTheme();
@@ -18,11 +18,12 @@ const App = () => {
                 <Link to={"/some"}>Some</Link>
                 <button onClick={toggleTheme}>Change theme</button>
             </nav>
-            <Routes>
-                <Route path={"/"} element={<Home/>}/>
-                <Route path={"/some"} element={<Some/>}/>
-                <Route path={"/*"} element={<Some/>}/>
-            </Routes>
+            <Suspense fallback={<p>Loading...</p>}>
+                <Routes>
+                    <Route path={"/"} element={<HomePage />}/>
+                    <Route path={"/*"} element={<HomePage />}/>
+                </Routes>
+            </Suspense>
         </div>
     )
 }
