@@ -1,0 +1,1 @@
+export {SignUpPageAsync as SignUpPage} from "./ui/SignUp.page.async"
