@@ -6,7 +6,7 @@ import Some from "../pages/Some";
 import "./styles/index.scss"
 
 import {useTheme} from "./theme/useTheme";
-import {classNames} from "./shared/lib/classNames/classNames";
+import {classNames} from "../shared/lib/classNames/classNames";
 
 const App = () => {
     const {theme, toggleTheme} = useTheme();
