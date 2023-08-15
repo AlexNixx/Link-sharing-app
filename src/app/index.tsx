@@ -3,10 +3,10 @@ import "./styles/index.scss"
 import {useTheme} from "./providers/ThemeProvider";
 import {classNames} from "../shared/lib/classNames/classNames";
 
-import {HomePage} from "../pages/home-page"
-import {PreviewPage} from "../pages/preview-page";
-import {SignInPage} from "../pages/sign-in-page";
-import {SignUpPage} from "../pages/sign-up-page";
+import {HomePage} from "../pages/HomePage"
+import {PreviewPage} from "../pages/PreviewPage";
+import {SignInPage} from "../pages/SignInPage";
+import {SignUpPage} from "../pages/SignUpPage";
 
 import {Link, Route, Routes} from "react-router-dom";
 import {Suspense} from "react";
