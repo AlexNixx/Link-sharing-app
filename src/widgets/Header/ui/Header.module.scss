@@ -1,0 +1,20 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 75px;
+  border-radius: 5px;
+  background-color: var(--color-white);
+  padding: .75rem 1rem;
+
+  .logo {
+    width: 146px;
+  }
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+}
